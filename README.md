@@ -22,3 +22,11 @@ licenses if you are considering using TagLib in your project.
   [FLAC]: https://xiph.org/flac/
   [GNU Lesser General Public License]: https://www.gnu.org/licenses/lgpl.html
   [Mozilla Public License]: https://www.mozilla.org/MPL/MPL-1.1.html
+
+### TagLib CI using Jenkins
+The included Jenkinsfile will compile and build taglib for one platform, and run tests. The binaries will then be deployed to an example_nfs_share.
+This pipeline requires the following libraries installed on the worker:
+- utf8cpp
+- zlib
+- cppunit
+
